@@ -44,10 +44,16 @@ function adicionarlinha() {
 }
 
 function atualizatabela() {
-    const corpotabela = document.querySelector('tbody');
+    const corpotabela = document.querySelector('.agenda tbody');
     corpotabela.innerHTML = linhas;
 }
 
-function removerElemento(elementoClicado) {
+function removerElemento(elementoClicado,removerItem) {
     elementoClicado.closest("tr").remove();
-  }
+    removerItem();
+}
+
+function removerItem(){
+    var index = NOME.indexOf(inputnome.value);
+    NOME.splice(NOME.indexOf(inputnome.value), 1);
+}

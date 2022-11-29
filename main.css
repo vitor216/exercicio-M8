@@ -32,7 +32,6 @@ header h1{
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    position: relative;
 }
 
 form{
@@ -74,17 +73,17 @@ form button{
     border-color: #91a798;
 }
 
-table{
+.agenda table{
     width: 100%;
 }
 
-table tr th img{
+.agenda table tr th img{
     height: 20px;
     align-items: center;
     margin-top: 10px;
 }
 
-table th{
+.agenda table th{
     border: 1px solid #000;
     padding-top: 0px;
     padding-left: 64px;
@@ -95,7 +94,7 @@ table th{
     background-color:  rgb(9, 170, 170);
 }
 
-table td{
+.agenda table td{
     padding: 16px 0;
     text-align: center;
     font-size: 18px;
@@ -107,8 +106,8 @@ table td{
 .calendar{
     max-width: 12px;
     width: 100%;
-    margin-top: -420px;
-    margin-left: 550px;
+    margin-top: -385px;
+    margin-left: 300px;
     position: absolute;
 }
 
