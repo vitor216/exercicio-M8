@@ -32,6 +32,7 @@ function adicionarlinha() {
     linha += `<td>${inputtel.value}</td>`
     linha += `<td>${inputemail.value}</td>`
     linha += `<td>${textareaobs.value}</td>`
+    linha += `<td><button class="apagar" onclick="removerElemento(event.target)">Apagar</button></td>`
     linha += '</tr>';
 
     linhas += linha;
@@ -46,3 +47,7 @@ function atualizatabela() {
     const corpotabela = document.querySelector('tbody');
     corpotabela.innerHTML = linhas;
 }
+
+function removerElemento(elementoClicado) {
+    elementoClicado.closest("tr").remove();
+  }
